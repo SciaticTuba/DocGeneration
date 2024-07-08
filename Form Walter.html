@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomu ya Maombi ya Mkopo</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid rgb(6, 22, 49);
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>FOMU YA MAOMBI YA MKOPO</h2>
+    <form>
+        <table>
+            <tr>
+                <td>AINA YA MTEJA:</td>
+                <td>
+                    <input type="radio" id="fd1" name="customerType" value="Mpya">
+                    <label for="fd1">Mpya</label><br>
+                    <input type="radio" id="fd2" name="customerType" value="Kurudia">
+                    <label for="fd2">Kurudia</label>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">TAARIFA ZA MTEJA</th>
+            </tr>
+            <tr>
+                <td>Jina la kwanza:</td>
+                <td><input type="text" id="fd3" name="firstName"></td>
+            </tr>
+            <tr>
+                <td>Jina la kati:</td>
+                <td><input type="text" id="fd4" name="middleName"></td>
+            </tr>
+            <tr>
+                <td>Jina la mwisho:</td>
+                <td><input type="text" id="fd5" name="lastName"></td>
+            </tr>
+            <tr>
+                <td>Aina ya kitambulisho:</td>
+                <td><input type="text" id="fd6" name="idType"></td>
+            </tr>
+            <tr>
+                <td>Namba ya kitambulisho:</td>
+                <td><input type="text" id="fd7" name="idNumber"></td>
+            </tr>
+            <tr>
+                <td>Tarehe ya kuzaliwa:</td>
+                <td><input type="date" id="fd8" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Jinsia:</td>
+                <td>
+                    <input type="radio" id="fd9" name="gender" value="MME">
+                    <label for="fd9">MME</label><br>
+                    <input type="radio" id="fd10" name="gender" value="MKE">
+                    <label for="fd10">MKE</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Makazi (Umiliki/pango):</td>
+                <td><input type="text" id="fd11" name="residence"></td>
+            </tr>
+            <tr>
+                <td>Namba ya simu:</td>
+                <td><input type="text" id="fd12" name="phone1"></td>
+            </tr>
+            <tr>
+                <td>Mob-2:</td>
+                <td><input type="text" id="fd13" name="phone2"></td>
+            </tr>
+            <tr>
+                <td>Anuani ya nyumbani:</td>
+                <td><input type="text" id="fd14" name="address"></td>
+            </tr>
+            <tr>
+                <td>Mkoa:</td>
+                <td><input type="text" id="fd15" name="region"></td>
+            </tr>
+            <tr>
+                <td>Kata:</td>
+                <td><input type="text" id="fd16" name="ward"></td>
+            </tr>
+            <tr>
+                <td>Wilaya:</td>
+                <td><input type="text" id="fd17" name="district"></td>
+            </tr>
+            <tr>
+                <td>Mtaa:</td>
+                <td><input type="text" id="fd18" name="street"></td>
+            </tr>
+            <tr>
+                <td>Barua pepe:</td>
+                <td><input type="email" id="fd19" name="email"></td>
+            </tr>
+            <tr>
+                <td>Hadhi ya ndoa:</td>
+                <td>
+                    <input type="radio" id="fd20" name="maritalStatus" value="Nimeoa/Nimeolewa">
+                    <label for="fd20">Nimeoa/Nimeolewa</label><br>
+                    <input type="radio" id="fd21" name="maritalStatus" value="Sijaoa">
+                    <label for="fd21">Sijaoa</label><br>
+                    <input type="radio" id="fd22" name="maritalStatus" value="Mtalakiwa">
+                    <label for="fd22">Mtalakiwa</label><br>
+                    <input type="radio" id="fd23" name="maritalStatus" value="Mjane">
+                    <label for="fd23">Mjane</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Je unawatoto? Ndio/Hapana:</td>
+                <td><input type="text" id="fd24" name="children"></td>
+            </tr>
+            <tr>
+                <td>Ni wangapi wanaoenda shule?</td>
+                <td><input type="number" id="fd25" name="schoolChildren"></td>
+            </tr>
+            <tr>
+                <td>Idadi ya wategemezi:</td>
+                <td><input type="number" id="fd26" name="dependents"></td>
+            </tr>
+            <tr>
+                <td>Matumizi ya familia kwa mwezi:</td>
+                <td><input type="text" id="fd27" name="monthlyExpenses"></td>
+            </tr>
+            <tr>
+                <td>Jina la mwanandoa:</td>
+                <td><input type="text" id="fd28" name="spouseName"></td>
+            </tr>
+            <tr>
+                <td>Aina ya kitambulisho:</td>
+                <td><input type="text" id="fd29" name="spouseIdType"></td>
+            </tr>
+            <tr>
+                <td>Namba ya kitambulisho:</td>
+                <td><input type="text" id="fd30" name="spouseIdNumber"></td>
+            </tr>
+            <tr>
+                <td>Namba ya simu (Mob-1):</td>
+                <td><input type="text" id="fd31" name="spousePhone1"></td>
+            </tr>
+            <tr>
+                <td>Mob-2:</td>
+                <td><input type="text" id="fd32" name="spousePhone2"></td>
+            </tr>
+            <tr>
+                <td>Mtu wako karibu:</td>
+                <td><input type="text" id="fd33" name="contactPerson"></td>
+            </tr>
+            <tr>
+                <td>Namba yake ya simu:</td>
+                <td><input type="text" id="fd34" name="contactPhone"></td>
+            </tr>
+            <tr>
+                <td>Anuani:</td>
+                <td><input type="text" id="fd35" name="contactAddress"></td>
+            </tr>
+            <tr>
+                <th colspan="2">TAARIFA ZA BIASHARA</th>
+            </tr>
+            <tr>
+                <td>Aina ya biashara:</td>
+                <td><input type="text" id="fd36" name="businessType"></td>
+            </tr>
+            <tr>
+                <td>Eneo:</td>
+                <td><input type="text" id="fd37" name="businessLocation"></td>
+            </tr>
+            <tr>
+                <td>Jina /Namba ya jengo:</td>
+                <td><input type="text" id="fd38" name="buildingName"></td>
+            </tr>
+            <tr>
+                <td>Mtaa:</td>
+                <td><input type="text" id="fd39" name="businessStreet"></td>
+            </tr>
+            <tr>
+                <td>Ninamiliki/Nimepanga:</td>
+                <td><input type="text" id="fd40" name="ownershipStatus"></td>
+            </tr>
+            <tr>
+                <td>Kodi kwa mwezi:</td>
+                <td><input type="text" id="fd41" name="monthlyRent"></td>
+            </tr>
+            <tr>
+                <td>Ina muda gani:</td>
+                <td><input type="text" id="fd42" name="businessDuration"></td>
+            </tr>
+            <tr>
+                <td>Mauzo kwa siku:</td>
+                <td><input type="text" id="fd43" name="dailySales"></td>
+            </tr>
+            <tr>
+                <td>Mauzo kwa mwezi:</td>
+                <td><input type="text" id="fd44" name="monthlySales"></td>
+            </tr>
+            <tr>
+                <td>Faida kwa siku:</td>
+                <td><input type="text" id="fd45" name="dailyProfit"></td>
+            </tr>
+            <tr>
+                <td>Faida kwa mwezi:</td>
+                <td><input type="text" id="fd46" name="monthlyProfit"></td>
+            </tr>
+            <tr>
+                <td>Matumizi ya familia kwa mwezi:</td>
+                <td><input type="text" id="fd47" name="monthlyFamilyExpenses"></td>
+            </tr>
+            <tr>
+                <td>Simu ya biashara:</td>
+                <td><input type="text" id="fd48" name="businessPhone"></td>
+            </tr>
+            <tr>
+                <td>Barua pepe:</td>
+                <td><input type="email" id="fd49" name="businessEmail"></td>
+            </tr>
+            <tr>
+                <td>Jina la akaunti:</td>
+                <td><input type="text" id="fd50" name="accountName"></td>
+            </tr>
+            <tr>
+                <td>Namba ya akaunti:</td>
+                <td><input type="text" id="fd51" name="accountNumber"></td>
+            </tr>
+            <tr>
+                <th colspan="2">TAARIFA YA KIFEDHA</th>
+            </tr>
+            <tr>
+                <td>Kiasi cha mkopo:</td>
+                <td><input type="text" id="fd52" name="loanAmount"></td>
+            </tr>
+            <tr>
+                <td>Matumizi ya mkopo:</td>
+                <td><input type="text" id="fd53" name="loanPurpose"></td>
+            </tr>
+            <tr>
+                <td>Muda wa mkopo:</td>
+                <td><input type="text" id="fd54" name="loanDuration"></td>
+            </tr>
+            <tr>
+                <td>Muda wa marejesho:</td>
+                <td><input type="text" id="fd55" name="repaymentAmount"></td>
+            </tr>
+            <tr>
+                <th colspan="2">MAELEZO YA DHAMANA</th>
+            </tr>
+            <tr>
+                <td>Aina ya dhamana:</td>
+                <td><input type="text" id="fd56" name="guaranteeType"></td>
+            </tr>
+            <tr>
+                <td>Thamani:</td>
+                <td><input type="text" id="fd57" name="guaranteeValue"></td>
+            </tr>
+            <tr>
+                <td>Jina la mdhamini:</td>
+                <td><input type="text" id="fd58" name="guarantorName"></td>
+            </tr>
+            <tr>
+                <td>Anuani ya mdhamini:</td>
+                <td><input type="text" id="fd59" name="guarantorAddress"></td>
+            </tr>
+            <tr>
+                <td>Namba ya simu ya mdhamini:</td>
+                <td><input type="text" id="fd60" name="guarantorPhone"></td>
+            </tr>
+            <tr>
+                <td>Aina ya kitambulisho:</td>
+                <td><input type="text" id="fd61" name="guarantorIdType"></td>
+            </tr>
+            <tr>
+                <td>Namba ya kitambulisho:</td>
+                <td><input type="text" id="fd62" name="guarantorIdNumber"></td>
+            </tr>
+            <tr>
+                <th colspan="2">KIKUNDI</th>
+            </tr>
+            <tr>
+                <td>Jina la kikundi:</td>
+                <td><input type="text" id="fd63" name="groupName"></td>
+            </tr>
+            <tr>
+                <td>Idadi ya wanakikundi:</td>
+                <td><input type="text" id="fd64" name="groupMembers"></td>
+            </tr>
+            <tr>
+                <td>Tarehe ya usajili:</td>
+                <td><input type="date" id="fd65" name="registrationDate"></td>
+            </tr>
+            <tr>
+                <td>Jina la kiongozi:</td>
+                <td><input type="text" id="fd66" name="groupLeader"></td>
+            </tr>
+            <tr>
+                <td>Namba ya simu ya kiongozi:</td>
+                <td><input type="text" id="fd67" name="leaderPhone"></td>
+            </tr>
+            <tr>
+                <td>Simu ya kikundi:</td>
+                <td><input type="text" id="fd68" name="groupPhone"></td>
+            </tr>
+            <tr>
+                <td>Siku ya mkutano:</td>
+                <td><input type="text" id="fd69" name="meetingDay"></td>
+            </tr>
+            <tr>
+                <th colspan="2">JINA LA AFISA MIKOPO</th>
+            </tr>
+            <tr>
+                <td>Jina la afisa:</td>
+                <td><input type="text" id="fd70" name="officerName"></td>
+            </tr>
+            <tr>
+                <th colspan="2">TAREHE</th>
+            </tr>
+            <tr>
+                <td>Tarehe:</td>
+                <td><input type="date" id="fd71" name="date"></td>
+            </tr>
+        </table>
+        <br>
+        <h3>AHADI NA MAKUBALIANO</h3>
+        <p>
+            Kwa kusaini fomu hii ya maombi, ninakubaliana na ahadi na masharti yote ya mkopo kama ilivyoelezwa na <strong>BANK</strong>.
+        </p>
+        <p>
+            Ninatamka kwamba taarifa nilizotoa ni za kweli na sahihi.
+        </p>
+        <p>
+            Sahihi ya mkopaji: ___________________________   Tarehe: _________________
+        </p>
+        <p>
+            Sahihi ya mke/mume: ___________________________   Tarehe: _________________
+        </p>
+        <p>
+            Sahihi ya afisa wa benki: ___________________________   Tarehe: _________________
+        </p>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
